@@ -1,0 +1,115 @@
+.sociel-media-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 8vw;
+}
+.media-logo {
+  height: 20px;
+  width: 20px;
+  
+}
+.premimun-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
+  background-size: cover;
+  width: 85vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .premimun-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 7px;
+  }
+}
+.website-logo {
+  height: 50px;
+  width: 30vw;
+}
+.banner-description {
+  color: #1e293b;
+}
+.get-it-now-button {
+  color: #1e293b;
+  border: 2px solid #1e293b;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 6px;
+}
+.close-button {
+  background-color: transparent;
+  border: none;
+  align-self: flex-start;
+}
+.video-cards-container {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .video-cards-container {
+    width: 85vw;
+    padding: 20px;
+    background-color: transparent;
+  }
+  .website-logo {
+    height: 60px;
+    width: 20vw;
+  }
+  .unorder-list-container {
+    overflow-y: scroll;
+    height: 40vh;
+  }
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.search-input {
+  color: #94a3b8;
+  border: 2px solid #94a3b8;
+  background-color: transparent;
+  width: 40vw;
+  font-size: 20px;
+  outline: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.search-button {
+  color: #94a3b8;
+  border: 2px solid #94a3b8;
+  background-color: transparent;
+  width: 10vw;
+  font-size: 19px;
+  border-left: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 85vw;
+}

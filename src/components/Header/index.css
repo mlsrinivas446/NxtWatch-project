@@ -1,0 +1,30 @@
+.theme-light-icons {
+  font-size: 30px;
+  color: #ffffff;
+}
+.link {
+  text-decoration: none;
+}
+.theme-dark-icons {
+  font-size: 30px;
+}
+.mobile-logout-button {
+  border: none;
+  font-size: 30px;
+  background-color: transparent;
+}
+.popup-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .popup-button-container {
+    width: 16vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

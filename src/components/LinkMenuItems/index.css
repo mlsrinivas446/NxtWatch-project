@@ -1,0 +1,8 @@
+.link {
+  text-decoration: none;
+}
+.link-button {
+  background-color: transparent;
+  min-width: 15vw;
+  border: none;
+}

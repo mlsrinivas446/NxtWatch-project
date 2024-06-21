@@ -1,0 +1,43 @@
+.react-player {
+  height: 40vh;
+  width: 100vw;
+}
+.player-wrapper {
+  height: 30vh;
+  width: 100vw;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 576px) {
+  .react-player {
+    width: 100vw;
+    height: 40vh;
+  }
+  .player-wrapper {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .react-player {
+    width: 85vw;
+    height: 50vh;
+  }
+  .player-wrapper {
+    width: 85vw;
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .react-player {
+    width: 85vw;
+    height: 50vh;
+  }
+  .player-wrapper {
+    width: 83vw;
+    height: 50vh;
+  }
+}
