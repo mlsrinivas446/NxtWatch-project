@@ -1,5 +1,5 @@
 import Header from '../Header'
-import NavigateItemComponent from '../NavigateItemComponent'
+import SideBarNavComponent from '../SideBarNavComponent'
 
 import ReactContext from '../../context/ReactContext'
 
@@ -25,7 +25,7 @@ const NotFound = () => (
         <TrendingContainer isDarkMode={isDarkMode}>
           <Header />
           <TrendingCardContainer>
-            <NavigateItemComponent />
+            <SideBarNavComponent />
             <TrendingContentContainer isDarkMode={isDarkMode}>
               <NotFoundImage src={notImage} alt="not found" />
               <NotFoundHeading isDarkMode={isDarkMode}>

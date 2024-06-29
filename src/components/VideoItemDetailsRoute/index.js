@@ -7,7 +7,7 @@ import {RiMenuAddFill} from 'react-icons/ri'
 import ApiFailureView from '../ApiFailureView'
 import ReactContext from '../../context/ReactContext'
 import Header from '../Header'
-import NavigateItemComponent from '../NavigateItemComponent'
+import SideBarNavComponent from '../SideBarNavComponent'
 import {
   VideoItemDetailsContainer,
   VideoItemCardDetailsContainer,
@@ -271,7 +271,7 @@ class VideoItemDetailsRoute extends Component {
             <VideoItemDetailsContainer isDarkMode={isDarkMode}>
               <Header />
               <VideoItemCardDetailsContainer>
-                <NavigateItemComponent />
+                <SideBarNavComponent />
                 <VideoItemContentContainer>
                   {renderApiViews()}
                 </VideoItemContentContainer>

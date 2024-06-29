@@ -5,7 +5,7 @@ import Popup from 'reactjs-popup'
 import {IoSunnyOutline} from 'react-icons/io5'
 import {IoIosLogOut, IoMdClose, IoMdMenu, IoMdMoon} from 'react-icons/io'
 
-import LinkMenuItems from '../LinkMenuItems'
+import SideBarNavItems from '../SideBarNavItems'
 
 import ReactContext from '../../context/ReactContext'
 
@@ -155,7 +155,7 @@ const Header = props => {
                     </CloseButton>
 
                     {menuList.map(each => (
-                      <LinkMenuItems
+                      <SideBarNavItems
                         key={each.id}
                         linkDetails={each}
                         menuLogo={<each.logo />}

@@ -4,7 +4,7 @@ import {HiFire} from 'react-icons/hi'
 import Loader from 'react-loader-spinner'
 
 import Header from '../Header'
-import NavigateItemComponent from '../NavigateItemComponent'
+import SideBarNavComponent from '../SideBarNavComponent'
 import TrendingCardItem from '../TrendingCardItem'
 
 import ApiFailureView from '../ApiFailureView'
@@ -131,7 +131,7 @@ class Trending extends Component {
             <TrendingContainer isDarkMode={isDarkMode} data-testid="trending">
               <Header />
               <TrendingCardContainer>
-                <NavigateItemComponent />
+                <SideBarNavComponent />
                 <TrendingContentContainer isDarkMode={isDarkMode}>
                   <TrendingIconContainer isDarkMode={isDarkMode}>
                     <TrendingIcon isDarkMode={isDarkMode}>

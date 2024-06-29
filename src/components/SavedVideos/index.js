@@ -1,7 +1,7 @@
 import {Component} from 'react'
 import {RiMenuAddFill} from 'react-icons/ri'
 import Header from '../Header'
-import NavigateItemComponent from '../NavigateItemComponent'
+import SideBarNavComponent from '../SideBarNavComponent'
 import TrendingCardItem from '../TrendingCardItem'
 
 import EmptySavedVideosView from '../EmptySavedVideosView'
@@ -33,7 +33,7 @@ class SavedVideos extends Component {
             >
               <Header />
               <TrendingCardContainer>
-                <NavigateItemComponent />
+                <SideBarNavComponent />
                 <TrendingContentContainer isDarkMode={isDarkMode}>
                   {savedList.length === 0 ? (
                     <EmptySavedVideosView />

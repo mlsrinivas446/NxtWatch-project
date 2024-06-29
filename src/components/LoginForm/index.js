@@ -87,7 +87,10 @@ class LoginForm extends Component {
 
           return (
             <LoginContainer isDarkMode>
-              <LoginCardContainer isDarkMode onSubmit={this.submitForm}>
+              <LoginCardContainer
+                isDarkMode={isDarkMode}
+                onSubmit={this.submitForm}
+              >
                 {lodoImgUrl}
                 <NameContainer>
                   <NameLabel htmlFor="username" isDarkMode>

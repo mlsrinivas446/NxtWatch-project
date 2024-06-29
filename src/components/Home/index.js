@@ -5,7 +5,7 @@ import Loader from 'react-loader-spinner'
 import {IoMdClose, IoMdSearch} from 'react-icons/io'
 import Header from '../Header'
 import HomeVideoItem from '../HomeVideoItem'
-import NavigateItemComponent from '../NavigateItemComponent'
+import SideBarNavComponent from '../SideBarNavComponent'
 import ReactContext from '../../context/ReactContext'
 
 import ApiFailureView from '../ApiFailureView'
@@ -222,7 +222,7 @@ class Home extends Component {
             <HomeContainer isDarkMode={isDarkMode} data-testid="home">
               <Header />
               <HomeBottomContainer isDarkMode={isDarkMode}>
-                <NavigateItemComponent />
+                <SideBarNavComponent />
                 <HomeCardContentContainer>
                   {renderApiViews()}
                 </HomeCardContentContainer>

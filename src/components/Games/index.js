@@ -4,7 +4,7 @@ import {IoLogoGameControllerB} from 'react-icons/io'
 import Loader from 'react-loader-spinner'
 import ApiFailureView from '../ApiFailureView'
 import Header from '../Header'
-import NavigateItemComponent from '../NavigateItemComponent'
+import SideBarNavComponent from '../SideBarNavComponent'
 import GamingCardItem from '../GamingCardItem'
 import ReactContext from '../../context/ReactContext'
 
@@ -122,7 +122,7 @@ class Gaming extends Component {
             <GamesContainer isDarkMode={isDarkMode} data-testid="gaming">
               <Header />
               <GamesCardContainer>
-                <NavigateItemComponent />
+                <SideBarNavComponent />
                 <GamesContentContainer isDarkMode={isDarkMode}>
                   <GamesIconContainer isDarkMode={isDarkMode}>
                     <GamesIcon isDarkMode={isDarkMode}>

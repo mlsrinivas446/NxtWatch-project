@@ -1,4 +1,4 @@
-import LinkMenuItems from '../LinkMenuItems'
+import SideBarNavItems from '../SideBarNavItems'
 
 import './index.css'
 
@@ -12,7 +12,7 @@ import {
   ContactHeading,
 } from './navStyledComponent'
 
-const NavigateItemComponent = () => (
+const SideBarNavComponent = () => (
   <ReactContext.Consumer>
     {value => {
       const {isDarkMode, menuList} = value
@@ -21,7 +21,7 @@ const NavigateItemComponent = () => (
         <HomeMenuContainer isDarkMode={isDarkMode}>
           <FilterMemuItemsContainer>
             {menuList.map(each => (
-              <LinkMenuItems
+              <SideBarNavItems
                 key={each.id}
                 linkDetails={each}
                 menuLogo={<each.logo />}
@@ -57,4 +57,4 @@ const NavigateItemComponent = () => (
   </ReactContext.Consumer>
 )
 
-export default NavigateItemComponent
+export default SideBarNavComponent
