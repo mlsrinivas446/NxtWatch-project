@@ -58,6 +58,12 @@ export const ContactImage = styled.img`
   width: 30px;
 `
 
+export const HambergerIcon = styled.div`
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`
+
 export const LogoutButton = styled.button`
   border: ${props =>
     `2px solid ${props.isDarkMode ? '#ffffff' : props.border}`};
@@ -119,11 +125,13 @@ export const MobileRoutesContainer = styled.ul`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
   background-color: ${props => (props.isDarkMode ? '#212121' : '#ffffff')};
-  overflow-y: auto;
-
+  margin: 0px;
+  width: 60vw;
+  padding: 0px;
+  @media screen and (min-width: 576px) {
+    width: 35vw;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -134,5 +142,6 @@ export const CloseButton = styled.button`
   border: none;
   align-self: flex-end;
   font-size: 20px;
+  outline: none;
   color: ${props => (props.isDarkMode ? '#ffffff' : '#212121')};
 `

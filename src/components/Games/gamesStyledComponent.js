@@ -20,13 +20,17 @@ export const GamesCardContainer = styled.div`
 `
 
 export const GamesIconContainer = styled.div`
+  height: 8vh;
+  width: 100vw;
   background-color: ${props => (props.isDarkMode ? '#313131' : '#f1f1f1')};
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 8vh;
-  width: 100vw;
-  padding-left: 10px;
+  padding: 10px;
+  @media screen and (min-width: 576px) {
+    height: 10vh;
+    width: 100vw;
+  }
   @media screen and (min-width: 768px) {
     height: 15vh;
     width: 85vw;
@@ -42,23 +46,30 @@ export const GamesContentContainer = styled.div`
 `
 
 export const GamesIcon = styled.div`
-  height: 40px;
-  width: 40px;
-  border-radius: 50px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: ${props => (props.isDarkMode ? '#231f20' : '#cbd5e1')};
+  @media screen and (min-width: 576px) {
+    height: 40px;
+    width: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 45px;
+    width: 45px;
+  }
 `
 
 export const ImageIcon = styled.p`
-  font-size: 25px;
+  font-size: 23px;
   color: #ff0000;
 
   @media screen and (min-width: 768px) {
     font-size: 30px;
-    color: #ff0000;
   }
 `
 
@@ -83,6 +94,5 @@ export const GamesUnorderListContainer = styled.ul`
   flex-wrap: wrap;
   @media screen and (min-width: 768px) {
     width: 85vw;
-    align-items: flex-start;
   }
 `

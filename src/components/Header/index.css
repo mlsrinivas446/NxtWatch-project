@@ -28,3 +28,10 @@
     align-items: center;
   }
 }
+
+.hamberger-icon {
+  height: 35px;
+  width: 35px;
+  border: none;
+  background-color: transparent;
+}

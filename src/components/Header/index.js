@@ -18,6 +18,7 @@ import {
   LogoutButton,
   ContactButton,
   ContactImage,
+  HambergerIcon,
   MobileContainer,
   MobileLogoutButton,
   PopupLogoutContainer,
@@ -47,6 +48,12 @@ const Header = props => {
           <IoSunnyOutline className="theme-light-icons" />
         ) : (
           <IoMdMoon className="theme-dark-icons" />
+        )
+
+        const hambergerIcon = isDarkMode ? (
+          <IoMdMenu className="hamberger-icon theme-light-icons" />
+        ) : (
+          <IoMdMenu className="hamberger-icon theme-dark-icons" />
         )
 
         const navToHome = () => {
@@ -134,15 +141,20 @@ const Header = props => {
               <ThemeButton onClick={changeTheme} data-testid="theme">
                 {themeImage}
               </ThemeButton>
+              <ContactButton>
+                <ContactImage
+                  src="https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png"
+                  alt="profile"
+                />
+              </ContactButton>
               <Popup
                 trigger={
-                  <ContactButton isDarkMode={isDarkMode}>
-                    <IoMdMenu />
-                  </ContactButton>
+                  <HambergerIcon isDarkMode={isDarkMode}>
+                    {hambergerIcon}
+                  </HambergerIcon>
                 }
                 className="popup-content"
-                position="center"
-                modal
+                position="bottom right"
               >
                 {close => (
                   <MobileRoutesContainer isDarkMode={isDarkMode}>

@@ -11,7 +11,6 @@ export const TrendingItem = styled.li`
   @media screen and (min-width: 768px) {
     width: 80vw;
     display: flex;
-    align-items: center;
   }
   @media screen and (min-width: 992px) {
     width: 70vw;
@@ -26,7 +25,7 @@ export const TrendingImg = styled.img`
 
   @media screen and (min-width: 576px) {
     width: 90vw;
-    height: 30vh;
+    height: 35vh;
   }
   @media screen and (min-width: 768px) {
     width: 30vw;

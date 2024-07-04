@@ -148,8 +148,11 @@ export const SaveText = styled.p`
 `
 
 export const HorizontalLine = styled.hr`
-  width: 80vw;
+  width: 90vw;
   color: #475569;
+  @media screen and (min-width: 768px) {
+    width: 80vw;
+  }
 `
 
 export const TeamIbContainer = styled.div`

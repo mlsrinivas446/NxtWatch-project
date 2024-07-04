@@ -1,26 +1,25 @@
 import styled from 'styled-components'
 
-export const TrendingItem = styled.li`
-  height: 40vh;
+export const GameingItem = styled.li`
+  height: 45vh;
   width: 80vw;
   list-style-type: none;
-  margin: 10px;
 
   @media screen and (min-width: 576px) {
     height: 50vh;
-    width: 40vw;
+    width: 45vw;
   }
   @media screen and (min-width: 768px) {
     height: 55vh;
-    width: 20vw;
+    width: 26vw;
   }
   @media screen and (min-width: 992px) {
     height: 60vh;
-    width: 18vw;
+    width: 20vw;
   }
 `
 
-export const TrendingImg = styled.img`
+export const GameingImg = styled.img`
   height: 30vh;
   width: 80vw;
 
@@ -41,13 +40,13 @@ export const TrendingImg = styled.img`
   }
 `
 
-export const TrendingDetailContainer = styled.div`
+export const GameingDetailContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 `
 
-export const TrendingTitle = styled.p`
+export const GameingTitle = styled.p`
   font-size: 15px;
   color: ${props => (props.isDarkMode ? '#ffffff' : '#1e293b')};
   @media screen and (min-width: 576px) {

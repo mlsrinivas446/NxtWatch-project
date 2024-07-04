@@ -27,7 +27,10 @@ export const TrendingIconContainer = styled.div`
   flex-direction: row;
   align-items: center;
   padding: 10px;
-
+  @media screen and (min-width: 576px) {
+    height: 10vh;
+    width: 100vw;
+  }
   @media screen and (min-width: 768px) {
     height: 15vh;
     width: 85vw;
@@ -41,55 +44,30 @@ export const TrendingContentContainer = styled.aside`
 `
 
 export const TrendingIcon = styled.div`
-  height: 40px;
-  width: 40px;
-  border-radius: 50px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: ${props => (props.isDarkMode ? '#231f20' : '#cbd5e1')};
   @media screen and (min-width: 576px) {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: ${props => (props.isDarkMode ? '#231f20' : '#cbd5e1')};
+    height: 40px;
+    width: 40px;
   }
-
   @media screen and (min-width: 768px) {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: ${props => (props.isDarkMode ? '#231f20' : '#cbd5e1')};
-  }
-
-  @media screen and (min-width: 900px) {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: ${props => (props.isDarkMode ? '#231f20' : '#cbd5e1')};
+    height: 45px;
+    width: 45px;
   }
 `
 
 export const ImageIcom = styled.p`
-  font-size: 25px;
+  font-size: 23px;
   color: #ff0000;
 
   @media screen and (min-width: 768px) {
     font-size: 30px;
-    color: #ff0000;
   }
 `
 
@@ -105,17 +83,15 @@ export const TrandingHeading = styled.h1`
   }
 `
 
-export const TrendingUnorderListCintainer = styled.ul`
+export const TrendingUnorderListContainer = styled.ul`
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 0;
   margin-left: 0;
-
   flex-wrap: wrap;
   @media screen and (min-width: 768px) {
     width: 85vw;
-    align-items: flex-start;
   }
 `

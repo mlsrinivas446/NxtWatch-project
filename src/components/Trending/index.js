@@ -19,7 +19,7 @@ import {
   TrendingIcon,
   ImageIcom,
   TrandingHeading,
-  TrendingUnorderListCintainer,
+  TrendingUnorderListContainer,
 } from './trendingStyledComponent'
 
 const apiConstants = {
@@ -143,9 +143,9 @@ class Trending extends Component {
                       Trending
                     </TrandingHeading>
                   </TrendingIconContainer>
-                  <TrendingUnorderListCintainer>
+                  <TrendingUnorderListContainer>
                     {renderApiViews()}
-                  </TrendingUnorderListCintainer>
+                  </TrendingUnorderListContainer>
                 </TrendingContentContainer>
               </TrendingCardContainer>
             </TrendingContainer>

@@ -4,12 +4,15 @@ export const FilterHomeContainer = styled.li`
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
-  width: 50vw;
+  width: 60vw;
   flex-direction: row;
   align-items: center;
   background-color: ${props => (props.isActive ? '#f1f5f9' : null)};
   background-color: ${props =>
     props.isDarkMode && props.isActive ? ' #181818' : null};
+  @media screen and (min-width: 576px) {
+    width: 35vw;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;

@@ -2,9 +2,9 @@ import {Link} from 'react-router-dom'
 import ReactContext from '../../context/ReactContext'
 
 import {
-  TrendingItem,
-  TrendingImg,
-  TrendingTitle,
+  GameingItem,
+  GameingImg,
+  GameingTitle,
   ViewsCount,
 } from './styledComponent'
 
@@ -18,11 +18,11 @@ const GamingCardItem = props => (
 
       return (
         <Link to={`/videos/${id}`} className="link">
-          <TrendingItem>
-            <TrendingImg src={thumbnailUrl} alt="video thumbnail" />
-            <TrendingTitle isDarkMode={isDarkMode}>{title}</TrendingTitle>
+          <GameingItem>
+            <GameingImg src={thumbnailUrl} alt="video thumbnail" />
+            <GameingTitle isDarkMode={isDarkMode}>{title}</GameingTitle>
             <ViewsCount>{viewCount} views</ViewsCount>
-          </TrendingItem>
+          </GameingItem>
         </Link>
       )
     }}

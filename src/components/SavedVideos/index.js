@@ -3,20 +3,18 @@ import {RiMenuAddFill} from 'react-icons/ri'
 import Header from '../Header'
 import SideBarNavComponent from '../SideBarNavComponent'
 import TrendingCardItem from '../TrendingCardItem'
-
 import EmptySavedVideosView from '../EmptySavedVideosView'
-
 import ReactContext from '../../context/ReactContext'
 
 import {
-  TrendingContainer,
-  TrendingCardContainer,
-  TrendingIconContainer,
-  TrendingContentContainer,
-  TrendingIcon,
-  ImageIcom,
-  TrandingHeading,
-  TrendingUnorderListCintainer,
+  SavedContainer,
+  SavedCardContainer,
+  SavedIconContainer,
+  SavedContentContainer,
+  SavedIcon,
+  ImageIcon,
+  SavedHeading,
+  SavedUnorderedListContainer,
 } from './savedStyledComponent'
 
 class SavedVideos extends Component {
@@ -27,41 +25,38 @@ class SavedVideos extends Component {
           const {isDarkMode, savedList} = value
 
           return (
-            <TrendingContainer
-              isDarkMode={isDarkMode}
-              data-testid="savedVideos"
-            >
+            <SavedContainer isDarkMode={isDarkMode} data-testid="savedVideos">
               <Header />
-              <TrendingCardContainer>
+              <SavedCardContainer>
                 <SideBarNavComponent />
-                <TrendingContentContainer isDarkMode={isDarkMode}>
+                <SavedContentContainer isDarkMode={isDarkMode}>
                   {savedList.length === 0 ? (
                     <EmptySavedVideosView />
                   ) : (
                     <>
-                      <TrendingIconContainer isDarkMode={isDarkMode}>
-                        <TrendingIcon isDarkMode={isDarkMode}>
-                          <ImageIcom isDarkMode={isDarkMode}>
+                      <SavedIconContainer isDarkMode={isDarkMode}>
+                        <SavedIcon isDarkMode={isDarkMode}>
+                          <ImageIcon isDarkMode={isDarkMode}>
                             <RiMenuAddFill />
-                          </ImageIcom>
-                        </TrendingIcon>
-                        <TrandingHeading isDarkMode={isDarkMode}>
+                          </ImageIcon>
+                        </SavedIcon>
+                        <SavedHeading isDarkMode={isDarkMode}>
                           Saved Videos
-                        </TrandingHeading>
-                      </TrendingIconContainer>
-                      <TrendingUnorderListCintainer>
+                        </SavedHeading>
+                      </SavedIconContainer>
+                      <SavedUnorderedListContainer>
                         {savedList.map(each => (
                           <TrendingCardItem
                             key={each.id}
                             trendingCardItem={each}
                           />
                         ))}
-                      </TrendingUnorderListCintainer>
+                      </SavedUnorderedListContainer>
                     </>
                   )}
-                </TrendingContentContainer>
-              </TrendingCardContainer>
-            </TrendingContainer>
+                </SavedContentContainer>
+              </SavedCardContainer>
+            </SavedContainer>
           )
         }}
       </ReactContext.Consumer>
