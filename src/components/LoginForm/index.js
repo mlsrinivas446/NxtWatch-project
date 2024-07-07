@@ -100,7 +100,7 @@ class LoginForm extends Component {
                   <UsernameInput
                     isDarkMode
                     type="text"
-                    id="username"
+                    id="rahul"
                     placeholder="Username"
                     onChange={this.setUsername}
                   />
@@ -112,7 +112,7 @@ class LoginForm extends Component {
                   <UsernameInput
                     type={showPassword ? 'text' : 'password'}
                     id="password"
-                    placeholder="Password"
+                    placeholder="rahul@2021"
                     onChange={this.setPassword}
                     isDarkMode
                   />
