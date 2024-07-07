@@ -101,7 +101,7 @@ class LoginForm extends Component {
                     isDarkMode
                     type="text"
                     id="username"
-                    placeholder="username"
+                    placeholder="rahul"
                     onChange={this.setUsername}
                   />
                 </NameContainer>
