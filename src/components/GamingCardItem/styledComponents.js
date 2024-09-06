@@ -4,18 +4,24 @@ export const GameingItem = styled.li`
   height: 45vh;
   width: 80vw;
   list-style-type: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  &: hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px darkgray;
+  }
 
   @media screen and (min-width: 576px) {
     height: 50vh;
-    width: 45vw;
+    width: 40vw;
   }
   @media screen and (min-width: 768px) {
     height: 55vh;
-    width: 26vw;
+    width: 25vw;
   }
   @media screen and (min-width: 992px) {
-    height: 60vh;
-    width: 20vw;
+    height: 55vh;
+    width: 18vw;
   }
 `
 
@@ -25,18 +31,16 @@ export const GameingImg = styled.img`
 
   @media screen and (min-width: 576px) {
     height: 35vh;
-    width: 35vw;
+    width: 40vw;
   }
 
   @media screen and (min-width: 768px) {
     height: 40vh;
-    width: 18vw;
-    margin-right: 20px;
+    width: 25vw;
   }
-
   @media screen and (min-width: 992px) {
     height: 40vh;
-    width: 16vw;
+    width: 18vw;
   }
 `
 

@@ -86,12 +86,13 @@ export const GamesHeading = styled.h1`
 `
 
 export const GamesUnorderListContainer = styled.ul`
-  width: 100vw;
+  width: 90vw;
   display: flex;
   flex-direction: row;
-  justify-content: cenetr;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   @media screen and (min-width: 768px) {
     width: 85vw;
   }

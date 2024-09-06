@@ -1,118 +1,149 @@
 import styled from 'styled-components'
 
 export const LoginContainer = styled.div`
-  background-color: ${props => (props.isDarkMode ? '#212121' : '#ebebeb')};
-  height: 100vh;
-  width: 100vw;
+  background-color: #f0f4f8;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 `
 
 export const LoginCardContainer = styled.form`
-  height: 50vh;
-  width: 80vw;
-  background-color: ${props => (props.isDarkMode ? '#000000' : '#ffffff')};
-  box-shadow: 0 3px 5px #475569;
-  border-radius: 7px;
-  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   @media screen and (min-width: 768px) {
-    height: 70vh;
-    width: 40vw;
-    background-color: ${props => (props.isDarkMode ? '#000000' : '#ffffff')};
-    box-shadow: 0 3px 5px #475569;
-    border-radius: 7px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
+    padding: 40px;
+    max-width: 500px;
   }
 `
 
 export const ImageElement = styled.img`
   align-self: center;
-  height: 7vh;
-  width: 40vw;
+  height: 50px;
+  width: auto;
+  margin-bottom: 30px;
+
   @media screen and (min-width: 768px) {
-    height: 8vh;
-    width: 20vw;
+    height: 60px;
   }
 `
 
 export const NameContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 5px;
-  background-color: transparent;
+  margin-bottom: 20px;
 `
 
 export const NameLabel = styled.label`
-  color: ${props => (props.isDarkMode ? '#ffffff' : '#475569')};
-  font-size: 15px;
-  font-weight: 500;
+  color: #2d3748;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
 
   @media screen and (min-width: 768px) {
-    color: ${props => (props.isDarkMode ? '#ffffff' : '#475569')};
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 18px;
   }
 `
 
 export const UsernameInput = styled.input`
-  color: ${props => (props.isDarkMode ? '#475569' : '#475569 ')};
-  font-size: 18px;
-  padding: 5px;
-  border-color: 1px solid #475569;
+  color: #2d3748;
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  background-color: #edf2f7;
   outline: none;
-  background-color: transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &:focus {
+    border-color: #3182ce;
+    background-color: #ffffff;
+  }
 
   @media screen and (min-width: 768px) {
-    color: ${props => (props.isDarkMode ? '#475569' : '#475569 ')};
-    font-size: 25px;
-    padding: 5px;
-    border-color: 1px solid #475569;
-    outline: none;
-    background-color: transparent;
+    font-size: 18px;
   }
 `
 
 export const CheckBoxContainer = styled.div`
   display: flex;
-  flex-direction: row;
   align-items: center;
+  margin-bottom: 20px;
 `
 
 export const CheckBoxElement = styled.input`
+  margin-right: 10px;
+  accent-color: #3182ce;
+
   @media screen and (min-width: 768px) {
     height: 20px;
     width: 20px;
-    font-size: 25px;
   }
 `
 
 export const CheckBoxLabel = styled.label`
-  color: ${props => (props.isDarkMode ? '#ffffff' : '#1e293b')};
-  font-size: 15px;
+  color: #2d3748;
+  font-size: 14px;
   padding-left: 5px;
 
   @media screen and (min-width: 768px) {
-    color: ${props => (props.isDarkMode ? '#ffffff' : '#1e293b')};
-    font-size: 25px;
-    padding-left: 7px;
+    font-size: 16px;
   }
 `
 
 export const LoginButton = styled.button`
   color: #ffffff;
-  background-color: #3b82f6;
+  background-color: #3182ce;
   border: none;
-  padding: 10px;
+  padding: 12px;
   border-radius: 8px;
-  margin-top: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+
+  &:hover {
+    background-color: #2b6cb0;
+    transform: translateY(-2px);
+  }
+
   @media screen and (min-width: 768px) {
-    font-size: 25px;
+    font-size: 18px;
+  }
+`
+export const ErrorMsg = styled.p`
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
+  }
+`
+
+export const LinkText = styled.p`
+  text-align: right;
+  font-size: 14px;
+  margin-top: 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
   }
 `

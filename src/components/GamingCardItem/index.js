@@ -6,7 +6,7 @@ import {
   GameingImg,
   GameingTitle,
   ViewsCount,
-} from './styledComponent'
+} from './styledComponents'
 
 const GamingCardItem = props => (
   <ReactContext.Consumer>

@@ -5,6 +5,12 @@ export const TrendingItem = styled.li`
   list-style-type: none;
   margin-top: 6px;
   margin-bottom: 6px;
+  border-radius: 5px;
+
+  &:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px darkgray;
+  }
   @media screen and (min-width: 576px) {
     width: 90vw;
   }

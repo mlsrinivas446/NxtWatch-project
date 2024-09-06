@@ -93,5 +93,8 @@ export const TrendingUnorderListContainer = styled.ul`
   flex-wrap: wrap;
   @media screen and (min-width: 768px) {
     width: 85vw;
+    align-items: none;
+    padding-left: 0;
+    margin-left: 0;
   }
 `

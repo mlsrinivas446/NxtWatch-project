@@ -2,10 +2,17 @@ import styled from 'styled-components'
 
 export const ListItemContainer = styled.li`
   list-style-type: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    box-shadow: 0px 4px 10px darkgray;
+    transform: scale(1.02);
+  }
+
+  margin-bottom: 10px;
   background-color: ${props => (props.isDarkMode ? '#181818' : '#f9f9f9')};
-  margin: 8px;
   width: 90vw;
-  height: 50vh;
+  height: 60vh;
 
   @media screen and (min-width: 576px) {
     width: 40vw;
@@ -22,9 +29,11 @@ export const ListItemContainer = styled.li`
   }
 `
 
-export const ThumbnillImage = styled.img`
+export const ThumbnailImage = styled.img`
   width: 90vw;
   height: 30vh;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 
   @media screen and (min-width: 576px) {
     width: 40vw;
@@ -41,29 +50,33 @@ export const ThumbnillImage = styled.img`
   }
 `
 
-export const ThumbnillContentContainer = styled.div`
+export const ThumbnailContentContainer = styled.div`
   display: flex;
   justify-content: flex-start;
 `
 
-export const ThumbnillTitleBatchViewCotainer = styled.div``
+export const ThumbnailTitleTeamViewCotainer = styled.div``
 
-export const ThumbnillProfileImage = styled.img`
+export const ThumbnailProfileImage = styled.img`
   height: 30px;
   width: 30px;
   margin-right: 7px;
   margin-top: 10px;
 `
 
-export const ThumbnillTitle = styled.p`
+export const ThumbnailTitle = styled.p`
   color: ${props => (props.isDarkMode ? '#ffffff' : '#1e293b')};
 
   @media screen and (max-width: 575px) {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   @media screen and (min-width: 576px) {
     font-size: 14px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
   }
 
   @media screen and (min-width: 992px) {
@@ -71,14 +84,16 @@ export const ThumbnillTitle = styled.p`
   }
 `
 
-export const ThumbnillBatchName = styled.p`
+export const ThumbnailTeamName = styled.p`
   color: ${props => (props.isDarkMode ? '#ffffff' : '#1e293b')};
-  font-size: 15px;
+  font-size: 14px;
 `
 
-export const ThumbnillViewsContainer = styled.div`
+export const ThumbnailViewsContainer = styled.div`
   display: flex;
   align-items: center;
+  margin: 0px;
+  padding: 0px;
 `
 
 export const ViewsCount = styled.p`

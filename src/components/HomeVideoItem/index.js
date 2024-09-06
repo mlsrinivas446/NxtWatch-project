@@ -1,13 +1,13 @@
 import {Link} from 'react-router-dom'
 import {
   ListItemContainer,
-  ThumbnillImage,
-  ThumbnillContentContainer,
-  ThumbnillProfileImage,
-  ThumbnillTitleBatchViewCotainer,
-  ThumbnillTitle,
-  ThumbnillBatchName,
-  ThumbnillViewsContainer,
+  ThumbnailImage,
+  ThumbnailContentContainer,
+  ThumbnailProfileImage,
+  ThumbnailTitleTeamViewCotainer,
+  ThumbnailTitle,
+  ThumbnailTeamName,
+  ThumbnailViewsContainer,
   ViewsCount,
 } from './styledComponents'
 
@@ -35,27 +35,27 @@ const VideoItem = props => (
       return (
         <Link to={`/videos/${id}`} className="link">
           <ListItemContainer isDarkMode={isDarkMode}>
-            <ThumbnillImage src={thumbnailUrl} alt="video thumbnail" />
-            <ThumbnillContentContainer>
+            <ThumbnailImage src={thumbnailUrl} alt="video thumbnail" />
+            <ThumbnailContentContainer>
               <div>
-                <ThumbnillProfileImage
+                <ThumbnailProfileImage
                   src={profileImageUrl}
                   alt="channel logo"
                 />
               </div>
-              <ThumbnillTitleBatchViewCotainer>
-                <ThumbnillTitle isDarkMode={isDarkMode}>{title}</ThumbnillTitle>
-                <ThumbnillBatchName isDarkMode={isDarkMode}>
+              <ThumbnailTitleTeamViewCotainer>
+                <ThumbnailTitle isDarkMode={isDarkMode}>{title}</ThumbnailTitle>
+                <ThumbnailTeamName isDarkMode={isDarkMode}>
                   {name}
-                </ThumbnillBatchName>
+                </ThumbnailTeamName>
 
-                <ThumbnillViewsContainer>
+                <ThumbnailViewsContainer>
                   <ViewsCount>{viewCount} views</ViewsCount>
                   <p className="dot">.</p>
                   <ViewsCount>{publishedAt}</ViewsCount>
-                </ThumbnillViewsContainer>
-              </ThumbnillTitleBatchViewCotainer>
-            </ThumbnillContentContainer>
+                </ThumbnailViewsContainer>
+              </ThumbnailTitleTeamViewCotainer>
+            </ThumbnailContentContainer>
           </ListItemContainer>
         </Link>
       )

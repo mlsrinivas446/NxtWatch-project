@@ -41,26 +41,22 @@ export const HomeCardContainer = styled.div`
 
 export const UnorderListItemsContainer = styled.ul`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  width: 95vw;
-  padding-left: 0;
-  margin-left: 0;
+  width: 90vw;
+  padding: 0;
+  margin: 0;
+  @media screen and (min-width: 478px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   @media screen and (min-width: 768px) {
     width: 85vw;
     padding: 10px;
-  }
-`
-
-export const UnorderListContainer = styled.ul`
-  display: flex;
-  align-items: center;
-  width: 40vw;
-
-  @media screen and (max-width: 768px) {
-    width: 85vw;
   }
 `
 
